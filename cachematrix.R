@@ -9,8 +9,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 cacheSolve <- function(x) {
-## if x$inverted_matrix hold cached inverted matrix
-## then it will simply return inverted matrix
+## if x$inverted_matrix hold cached inverted matrix,
+## then it will simply return cached data.
   if(!is.null(x$inverted_matrix)) {
     message("getting cached data")
     return(x$inverted_matrix)
